@@ -110,6 +110,7 @@ public class UserEntity implements UserDetails {
             name = "users_guides",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "guide_id")
+
     )
     private List<Guide> createdGuides;
 }
